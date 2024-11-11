@@ -1,0 +1,786 @@
+/* General reset */
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    
+  
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #333;
+}
+nav .logo img {  
+    max-width: 150px;  
+}  
+
+
+
+
+nav .logo {
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {  
+    margin-left: 0.5em;  
+}  
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    color: #f00;
+}
+
+/* Hero section */
+.hero {
+    
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('mano.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*LA OTRA FOTO */
+.hero1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('FORT.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*LA OTRA FOTO about 2 */
+.hero2 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fondo2.2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*LA OTRA FOTO */
+.hero3 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fondoC.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*LA OTRA FOTO about 2 */
+.hero4 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('call2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero5 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('super1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero6 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fondoG.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero7 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('DA.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero8 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('agua.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cta {
+    padding: 1rem 2rem;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta:hover {
+    background-color: #ff0000;
+}
+
+/* Content section */
+.content {
+    padding: 5rem 2rem;
+    background-color: #111;
+    text-align: center;
+    margin-bottom: 4rem; /* Espacio entre contenido y la siguiente sección */
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Services Grid */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 200px;
+    background-image: url('super1.jpg');
+    padding: 1rem;
+    margin: 200px auto; /* Añade más espacio alrededor de los contenedores de tarjetas */
+}
+
+img, video {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+    display: block;
+}
+
+.card {
+    background-color: #272034;
+    padding: 100px;
+    border-radius: 5px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:nth-child(2), .card:nth-child(4), .card:nth-child(6) {
+    background-color: #404040;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+p {
+    font-size: 1em;
+    color: #fff;
+    margin: 5px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Marketing Firm section */
+.container .text-section {
+    grid-column: span 2;
+    padding-right: 20px;
+    margin-bottom: 3rem; /* Espacio extra entre esta sección y la siguiente*/ 
+} 
+
+.text-section h1  {
+    display: flex;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.text-section p {
+    color: #b3b3b3;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.text-section a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.icon-facebook::before { content: 'facebook'; }
+.icon-twitter::before { content: 'twitter'; }
+.icon-youtube::before { content: 'youtube'; }
+.icon-behance::before { content: 'behance'; }
+.icon-pinterest::before { content: 'pinterest'; }
+.icon-dribbble::before { content: 'dribbble'; }
+
+/* Statistics section */
+.stats-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+    margin-top: 10rem; /* Espacio antes de la sección de estadísticas */
+    margin-bottom: 10rem; /* Espacio después de la sección de estadísticas */
+}
+
+.stat h2 {
+    color: #d9534f;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: #666;
+}
+
+/* Clients section */
+.clients-section {
+    
+    margin-top: 10rem;
+    display: grid;
+    background-color: #333;
+    color: #fff;
+    padding: 2em;  
+    text-align: center; 
+    
+    margin-top: 5rem; /* Espacio antes de la sección de clientes */
+}
+
+.clients-section h3 {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.clients-grid {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
+    gap: 1em; 
+  
+
+ 
+}
+@media (max-width: 768px) {  
+  
+
+
+    .services {
+        flex-direction: column; 
+       
+    }
+        
+
+    .stats-section {  
+        flex-direction: column;  
+    }  
+
+
+}
+
+ .client-item {
+
+   
+    text-align: center;
+} 
+
+.client-logo {
+    background-color: #ced2d3;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.client-logo img {
+    max-width: 200%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.client-logo1 img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+.client-item p {
+    color: #bbb;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+/* NUEVO AQUI EL ESTILO2 */
+header {  
+    background-color: #333;  
+    color: #fff;  
+}  
+/* NUEVO AQUI EL ESTILO2 */
+
+/* Espacio entre secciones */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 200px auto; /* Espacio alrededor de los contenedores de tarjetas */
+}
+
+.container .text-section {
+    grid-column: span 2;
+    padding-right: 30px;
+    margin-bottom: 4rem;
+}
+
+.stats-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+    margin-top: 10rem; /* Espacio antes de la sección de estadísticas */
+    margin-bottom: 10rem;
+}
+
+.clients-section {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;  
+    text-align: center;  
+}
+
+/* Sección de imágenes (4x2 grid) */
+.clients-grid {
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
+   
+    gap: 1em;  
+  
+  
+}
+
+.grid-container {  
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);  
+    grid-template-rows: repeat(2, 200px);  
+    gap: 2px;  
+    padding: 1em;  
+}  
+
+.grid-item {
+ 
+    background-size: cover;
+    background-position: center;
+   
+}
+/* version mejorada */
+.grid-container1 {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    max-width: 20000px;
+    margin: 1 auto;
+}
+.grid-item1 {
+    margin-top: 0rem;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.grid-container1 p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* version mejorada  */
+
+.red-box {
+    background-color: #ff4c4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.red-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.red-box-content h2 {
+    margin-bottom: 10px;
+}
+
+.red-box-content button {
+    padding: 10px 20px;
+    background: white;
+    color: #ff4c4c;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.red-box-content button:hover {
+    background-color: #ffdcdc;
+}
+
+
+
+/*FINALLL*/
+
+
+footer {
+    background-color: #1d1d1d;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.social-links, .contact-info {
+    width: 45%;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    line-height: 2;
+}
+
+ul li {
+    font-size: 16px;
+}
+
+.contact-info .location {
+    margin-bottom: 20px;
+}
+
+.contact-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #333;
+}
+.hero-cards {
+    background-image: url('wwll.webp'); /* Cambia a la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-cards .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero-cards .card {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cards .card .icon {
+    font-size: 30px;
+}
+
+.hero-cards .card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero-cards .card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.hero-cards .card .client-logo img {
+    max-width: 50px;
+    margin: 10px 0;
+}
+
+.hero-cards .card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero-cards .card a:hover {
+    background-color: #0056b3;
+}
+
+.intro {
+    text-align: left;
+    padding: 20px;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-bottom: 10px;
+}
+
+.intro ul {
+    list-style: none;
+}
+
+.intro ul li {
+    margin: 5px 0;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 2em;
+    text-align: center;  
+}
+
+.card {
+    background-color: #e74c3c;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info {
+    max-width: 400px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+.location h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-form {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: white;
+    color: black;
+}
