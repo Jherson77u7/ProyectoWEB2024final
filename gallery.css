@@ -1,0 +1,55 @@
+/* Estilos generales de la galería */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    gap: 2px;
+    padding: 5px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.services .card {
+    display: flex;
+    background-color: #333;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    padding: 0;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+}
+
+.services img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+.services p {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+    
+    .services p {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+}
